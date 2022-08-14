@@ -282,6 +282,11 @@ header .hero-image{
 
 /* video section  */
 
+.video-player{
+    position: relative;
+    overflow: hidden;
+}
+
 .heading-food{
     justify-content: center;
     text-align: center;
@@ -361,19 +366,7 @@ p{
 }
 
 
-/*Footer section*/
-/* footer{
-    background: #1AC073;
-    height: 137px;
-}
-
-.footer-logo{
-    font-family: 'Squada one';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    color: white;
-} */
+/* Footer Section */
 
 .footer-container{
     background: #1AC073;
@@ -416,6 +409,7 @@ footer .logo{
 .facebook{
     margin-right: 15px;
 }
+
 
 /* .line{
     padding: 48px;;

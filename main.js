@@ -16,6 +16,9 @@
 const productContainers = document.querySelectorAll('.product-container');
 const nxtBtn = document.querySelectorAll('.nxt-btn');
 const preBtn = document.querySelectorAll('.pre-btn');
+const videoPlayer = document.querySelector('.video-player');
+const video = videoPlayer.querySelector('.video');
+const playBtn = videoPlayer.querySelector('.play-button');
 
 productContainers.forEach((item, i) => {
     let containerDimensions = item.getBoundingClientRect();
@@ -28,4 +31,15 @@ productContainers.forEach((item, i) => {
     preBtn[i].addEventListener('click', () => {
         item.scrollLeft -= containerWidth;
     })
+})
+
+// Play and pause button
+playBtn.addEventListener('click', (e) => {
+    if(video.paused){
+        video.play()
+        e.target.textContent = 'Arrow.png'
+    } else{
+        video.pause()
+        e.target.textContent = 'Arrow.png'
+    }
 })
