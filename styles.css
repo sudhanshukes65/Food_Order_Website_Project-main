@@ -53,7 +53,6 @@ nav .logo{
 .nav-items li a{
     color: white;
     font-size: 18px;
-    /* font-family: 'Roboto', sans-serif; */
     text-decoration: none;
 }
 
@@ -130,7 +129,6 @@ header .hero-image{
 .nav-btn-container{
     display: inline-block;
     padding: 0rem 1rem;
-    /* margin: 2rem; */
 }
 
 .search-btn{
@@ -145,13 +143,103 @@ header .hero-image{
     margin-top: -7rem;
 }
 
+/* Home kitchen */
+
+.all-btn{
+    margin-left: 130px;
+    margin-bottom: 37px;
+    background: #F7F8FA;
+}
+
+.all{
+    background: #F3BA00;
+    border-top-left-radius: 8px;
+    /* border-bottom: 2px;
+    border-top: 2px;
+    border-left: 2px; */
+    /* border-right: 2px; */
+    color: white;
+    padding: 13px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: -0.2rem;
+}
+
+.new{
+    /* border-radius: 10px; */
+    color: #929292;
+    padding: 13px 40px;
+    /* border-bottom: 2px;
+    border-top: 2px;
+    border-left: 2px; */
+    /* border-right: 2px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: -0.2rem;
+}
+
+.free-delivery{
+    /* border-radius: 10px; */
+    color: #929292;
+    padding: 13px 40px;
+    /* border-bottom: 2px;
+    border-top: 2px;
+    border-left: 2px; */
+    /* border-right: 2px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: -0.2rem;
+}
+
+.offers{
+    /* border-radius: 10px; */
+    color: #929292;
+    padding: 13px 40px;
+    /* border-bottom: 2px;
+    border-top: 2px;
+    border-left: 2px; */
+    /* border-right: 2px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: -0.2rem;
+}
+
+.coming{
+    /* border-radius: 10px; */
+    color: #929292;
+    padding: 13px 40px;
+    border-top-right-radius: 8px;
+    /* border-bottom: 2px;
+    border-top: 2px;
+    border-left: 2px; */
+    /* border-right: 2px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: -0.02rem;
+}
+
 .heading{
     width: 250px;
     height: 24px;
     margin-top: 105px;
     margin-left: 130px;
-    margin-bottom: 63px;
-    font-family: 'Roboto';
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 800;
     font-size: 40px;
@@ -300,6 +388,10 @@ header .hero-image{
     margin-bottom: 50px;
 }
 
+.play-button{
+    cursor: pointer;
+}
+
 .color{
     margin-top: -221px;
     width: 1498px;
@@ -353,10 +445,17 @@ p{
     display: inline;
 }
 
-.button-{
+.submit{
     background: #1AC073;
     border-radius: 10px;
     color: white;
+    padding: 15px 65px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 .contact-us{
@@ -411,6 +510,3 @@ footer .logo{
 }
 
 
-/* .line{
-    padding: 48px;;
-} */
