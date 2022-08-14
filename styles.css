@@ -6,7 +6,7 @@
 }
 
 body{
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     background: #F7F8FA;
 }
 
@@ -53,11 +53,11 @@ nav .logo{
 .nav-items li a{
     color: white;
     font-size: 18px;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     text-decoration: none;
 }
 
-.nav-items li a  :hover{
+.nav-items li a:hover{
     cursor: pointer;
 }
 
@@ -359,3 +359,64 @@ p{
     justify-content: space-between;
     padding: 100px 129px;
 }
+
+
+/*Footer section*/
+/* footer{
+    background: #1AC073;
+    height: 137px;
+}
+
+.footer-logo{
+    font-family: 'Squada one';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+} */
+
+.footer-container{
+    background: #1AC073;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 137px;
+}
+
+footer ul{
+    display: flex;
+}
+
+footer .logo{
+    font-family: 'Squada One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+}
+
+.footer-items li{
+    list-style: none;
+    margin-right: 100px;
+}
+
+.footer-items li:nth-last-of-type(1){
+    margin: 0;
+}
+
+.footer-items li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.facebook{
+    margin-right: 15px;
+}
+
+/* .line{
+    padding: 48px;;
+} */
