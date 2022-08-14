@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Squada+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto';
+    background: #F7F8FA;
+}
+
+/*Navigation*/
+
+.nav-container{
+    background: #1AC073;
+    height: 80px;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav .logo{
+    font-family: 'Squada One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    color: white;
+}
+
+.nav-items li{
+    list-style: none;
+    margin-right: 100px;
+}
+
+.nav-items li:nth-last-of-type(1){
+    margin: 0;
+}
+
+.nav-items li a{
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+.nav-items li a  :hover{
+    cursor: pointer;
+}
+
+
+/*Header*/
+.header-container{
+    background: #1AC073;
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 82px;
+    color: #FFFFFF;
+    margin-bottom: 17px;
+
+}
+
+header p{
+    font-size: 18px;
+    line-height: 20px;
+    color: white;
+    width: 441px;
+    margin-bottom: 42px;
+}
+
+input{
+    width: 286px;
+    height: 58px;
+    border-radius: 0.5rem;
+}
+
+input[type="text"]::placeholder{
+    padding-left: 22px;
+}
+
+header a{
+    background: #F3BA00;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px;
+    padding: 18px 48px;
+    display: inline-block;
+    transition: 300ms;
+}
+
+header a:hover{
+    transform: translateY(-8px);
+}
+
+header .hero-image{
+   margin-top: 20.2rem;
+   margin-bottom: 15rem;
+}
+
+
+/*Search and Cart buttons*/
+.nav-btn-container{
+    display: inline-block;
+    padding: 0rem 1rem;
+    /* margin: 2rem; */
+}
+
+.search-btn{
+    margin-right: 2rem;
+}
+
+.search-here{
+    margin-right: -0.3rem;
+}
+
+.hero-content{
+    margin-top: -7rem;
+}
+
+.heading{
+    width: 250px;
+    height: 24px;
+    margin-top: 105px;
+    margin-left: 130px;
+    margin-bottom: 63px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 24px;
+    letter-spacing: -0.012em;
+    color: #000000;
+}
+
+.rating-and-time{
+    display: flex;
+
+}
+
+.line1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.line2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 39px;
+}
+
+.line3{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 130px;
+    margin-right: 130px;
+    margin-top: 39px;
+}
+
+.about{
+    width: 277px;
+    height: 87px;
+    padding:  20px 24px;
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 1px rgba(187, 187, 187, 0.25);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.food3{
+    width: 277px;
+    height: 250px;
+}
+
+
+/* popular items */
+
+.heading-popular-items{
+    text-align: center;
+    font-weight: 800;
+}
+
+.product-container{
+    width: 1100px;
+    padding: 5vh 7vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.products{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.product-container::-webkit-scrollbar{
+    display: none;
+}
+
+.space{
+    margin-left: 60px;
+    margin-right: 60px;
+    position: relative;
+    width: 140px;
+    height: 250px;
+}
+
+.product {
+    margin: 110px;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.pre-btn, .nxt-btn{
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.pre-btn :hover{
+
+    content: url(Arrow.png);
+    transform: rotate(180deg);
+}
+
+.nxt-btn :hover{
+    content: url(Arrow.png);
+    transform: rotate(180deg);
+}
+
+.pre-btn {
+  left: 0;
+}
+
+.nxt-btn {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+
+
+/* video section  */
+
+.heading-food{
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.desciption{
+    margin-top: 10px;
+    margin-left: 25rem;
+    margin-right: 25rem;
+    margin-bottom: 50px;
+}
+
+.color{
+    margin-top: -221px;
+    width: 1498px;
+    height: 344px;
+    top: 516px;
+    background-color: #C7EACC;
+}
+
+
+/* contact us */
+
+.heading-question{
+    background-color: #F7F8FA;
+    margin-top: 100px;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -1.2%;
+    width: 286px;
+}
+
+p{
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.name{
+    margin-top: 30px;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+
+.email-{
+    padding: 22px;
+    border-radius: 10px;
+}
+
+.message{
+    height: 164px;
+    width: 617px;
+    margin-top: 35px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.delivery{
+    display: inline;
+}
+
+.button-{
+    background: #1AC073;
+    border-radius: 10px;
+    color: white;
+}
+
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 129px;
+}
