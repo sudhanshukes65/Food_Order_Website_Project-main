@@ -398,6 +398,22 @@ header .hero-image{
     text-align: right;
 }
 
+button{
+    align-items: center;
+    border: 2px solid #1AC073;
+    background: #1AC073;
+    border-radius: 10px;
+    color: white;
+    padding: 15px 65px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 2px;
+    cursor: pointer;
+    justify-content: center;
+}
+
 
 
 /* video section  */
