@@ -36,7 +36,11 @@
                         <img class="cart-btn" src="akar-icons_shopping-bag.png" alt="">
                     </a>
                 </li>
-                </li>
+                <!-- <li>
+                    <button>
+                        <img class="cart-btn" src="akar-icons_shopping-bag.png" alt="">
+                    </button>
+                </li> -->
                </ul> 
             </nav>
         </div>
@@ -740,22 +744,32 @@
                 </div>
             </div>
         </div>
-        <!-- <button class = "request">Request a dish</button>
+    </section>
+
+
+    <button data-modal-target="#modal" class = "request">Request a dish</button>
         <div class="modal" id="modal">
             <div class="modal-header">
                 <div class="title">Request a dish</div>
-
+                <!-- <h1>Request a dish</h1> -->
             </div>
             <div class="modal-body">
-                <input type="text" placeholder="Enter name of the dish" class="name" value="Name*"/>
+                <div>Name*</div>
+                <input type="text" placeholder="Enter name of the dish" class="name" Name*/>
+                <div>Price Range*</div>
+                <div class="ranges">
+                <input type="number" class="range-1" value="₹">
+                <p>to</p>
+                <input type="number"class="range-2">
             </div>
             <div class="cancel-and-submit">
-                <button class="cancel">Cancel</button>
-                <button class="submit">Submit</button>
+                <button data-close-button class="cancel">Cancel</button>
+                <button data-close-button class="submit-">Submit Request</button>
+            
             </div>
-        </div> -->
-    </section>
-    <!-- <button>Request a dish</button> -->
+        </div>
+    </div>
+    <div id="overlay"></div>
 
 
 
