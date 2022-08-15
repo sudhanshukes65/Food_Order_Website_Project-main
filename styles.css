@@ -62,6 +62,7 @@ nav .logo{
 
 
 /*Header*/
+
 .header-container{
     background: #1AC073;
     height: calc(100vh - 72px);
@@ -143,6 +144,19 @@ header .hero-image{
     margin-top: -7rem;
 }
 
+.search-here{
+    border: 2px solid #929292;
+    border-radius: 0px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.search{
+    border-radius: 0px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
 /* Home kitchen */
 
 .all-btn{
@@ -153,10 +167,9 @@ header .hero-image{
 
 .all{
     border: 2px solid #F3BA00;
-    
+    color: #929292;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-   
     padding: 13px 40px;
     text-align: center;
     text-decoration: none;
@@ -165,6 +178,7 @@ header .hero-image{
     cursor: pointer;
     margin-right: -0.2rem;
 }
+
 .all:hover{
     background: #F3BA00;
     color: white;
@@ -172,13 +186,8 @@ header .hero-image{
 
 .new{
     border: 2px solid #F3BA00;
-    /* border-radius: 10px; */
     color: #929292;
     padding: 13px 40px;
-    /* border-bottom: 2px;
-    border-top: 2px;
-    border-left: 2px; */
-    /* border-right: 2px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -186,39 +195,33 @@ header .hero-image{
     cursor: pointer;
     margin-right: -0.2rem;
 }
+
 .new:hover{
     background: #F3BA00;
     color: white;
-
 }
 
 .free-delivery{
     border: 2px solid #F3BA00;
-    /* border-radius: 10px; */
     color: #929292;
     padding: 13px 40px;
-    /* border-bottom: 2px;
-    border-top: 2px;
-    border-left: 2px; */
-    /* border-right: 2px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
     margin-right: -0.2rem;
+}
+
+.free-delivery:hover{
+    background: #F3BA00;
+    color: white;
 }
 
 .offers{
     border: 2px solid #F3BA00;
-    /* border-color: #F3BA00; */
-    /* border-radius: 10px; */
     color: #929292;
     padding: 13px 40px;
-    /* border-bottom: 2px;
-    border-top: 2px;
-    border-left: 2px; */
-    /* border-right: 2px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -227,22 +230,28 @@ header .hero-image{
     margin-right: -0.2rem;
 }
 
+.offers:hover{
+    background: #F3BA00;
+    color: white;
+}
+
 .coming{
     border: 2px solid #F3BA00;
-    /* border-radius: 10px; */
     color: #929292;
     padding: 13px 40px;
     border-top-right-radius: 8px;
-    /* border-bottom: 2px;
-    border-top: 2px;
-    border-left: 2px; */
-    /* border-right: 2px; */
+    border-bottom-right-radius: 8px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
     margin-left: -0.02rem;
+}
+
+.coming:hover{
+    background: #F3BA00;
+    color: white;
 }
 
 .heading{
@@ -291,7 +300,6 @@ header .hero-image{
 .about{
     width: 277px;
     height: 87px;
-    /* padding:  20px 24px; */
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
@@ -301,11 +309,10 @@ header .hero-image{
     background: #FFFFFF;
     box-shadow: 0px 0px 1px rgba(187, 187, 187, 0.25);
     border-radius: 0px 0px 10px 10px;
-    /* margin-bottom: 10px; */
 }
+
 .space-rating{
     width: 10px;
-    /* background-color: red; */
 }
 
 .food3{
@@ -429,8 +436,8 @@ header .hero-image{
 
 .player-controls{
     position: absolute;
-    top: 50px;
-    left: 300px;
+    top: 160px;
+    left: 680px;
     z-index: 1;
 }
 
@@ -459,11 +466,13 @@ p{
     margin-top: 30px;
     margin-right: 40px;
     border-radius: 10px;
+    border: 2px solid #929292;
 }
 
 .email-{
     padding: 22px;
     border-radius: 10px;
+    border: 2px solid #929292;
 }
 
 .message{
@@ -472,6 +481,7 @@ p{
     margin-top: 35px;
     border-radius: 10px;
     margin-bottom: 40px;
+    border: 2px solid #929292;
 }
 
 .delivery{
@@ -479,6 +489,7 @@ p{
 }
 
 .submit{
+    border: 2px solid #1AC073;
     background: #1AC073;
     border-radius: 10px;
     color: white;
@@ -544,13 +555,10 @@ footer .logo{
 
 .last-line{
     position: relative;
-    bottom: 40px;
+    bottom: 35px;
     width: 1180.5px;
     height: 0px;
     border: 1px solid #FFFFFF;
-    /* margin-top: -20px; */
-
-
 }
 
 
