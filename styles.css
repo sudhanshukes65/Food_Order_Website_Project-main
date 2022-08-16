@@ -442,7 +442,7 @@ border-radius: 20px;
 
 .request{
     position: relative;
-    left: 550px;
+    left: 600px;
     top: -30px;
     align-items: center;
     border: 2px solid #1AC073;
@@ -557,10 +557,21 @@ border-radius: 20px;
 
 .ranges-and-preparation{
     display: flex;
+    justify-content: space-between;
+}
+
+.name-input{
+    background: #F2F2F2;
+    border: none;
+    width: 900px;
 }
 
 .ranges{
     display: flex;
+}
+.ranges-both{
+    display: flex;
+    align-items: center;
 }
 
 
@@ -569,15 +580,66 @@ border-radius: 20px;
 }
 
 .preparation-1::-webkit-input-placeholder { text-align:right; }
+.preparation-2::-webkit-input-placeholder { text-align:right; }
 
 .preparation-divs{
     display: flex;
+    align-items: center;
 }
-.preparation-1{
+
+.range-1{
+    background: #F2F2F2;
+    border: none;
+    width: 200px;
+    height: 48px;
+}
+.range-2{
+    background: #F2F2F2;
+    border: none;
     width: 200px;
     height: 48px;
 }
 
+
+.preparation-1{
+    background: #F2F2F2;
+    border: none;
+    width: 200px;
+    height: 48px;
+}
+
+.preparation-2{
+    background: #F2F2F2;
+    border: none;
+    width: 200px;
+    height: 48px;
+}
+
+.recipe{
+    background: #F2F2F2;
+    border: none;
+    width: 900px;
+height: 180px;
+
+}
+
+.image-upload-input{
+    background: #F2F2F2;
+    border: none;
+    width: 900px;
+
+}
+.cancel-and-submit{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cancel{
+    width: 300px;
+}
+.submit-{
+    width: 300px;
+}
 
 /* video section  */
 
