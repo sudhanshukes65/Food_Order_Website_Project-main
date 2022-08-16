@@ -23,6 +23,7 @@ const openModalBtn = document.querySelectorAll('[data-modal-target]');
 const closeModalBtns = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
 
+// Popular items section
 productContainers.forEach((item, i) => {
     let containerDimensions = item.getBoundingClientRect();
     let containerWidth = containerDimensions.width;
@@ -40,10 +41,10 @@ productContainers.forEach((item, i) => {
 playBtn.addEventListener('click', (e) => {
     if(video.paused){
         video.play()
-        e.target.textContent = 'Arrow.png'
+        e.target.textContent = 'otherimages/Arrow.png'
     } else{
         video.pause()
-        e.target.textContent = 'Arrow.png'
+        e.target.textContent = 'otherimages/Arrow.png'
     }
 })
 
