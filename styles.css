@@ -325,7 +325,8 @@ header .hero-image{
 
 .heading-popular-items{
     text-align: center;
-    font-weight: 800;
+    font-weight: 1800px;
+    font-size: xx-large;
 }
 
 .product-container{
@@ -398,6 +399,130 @@ header .hero-image{
     text-align: right;
 }
 
+.request{
+    align-items: center;
+    border: 2px solid #1AC073;
+    background: #1AC073;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 65px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 2px;
+    cursor: pointer;
+    justify-content: center;
+}
+
+/* .request:hover{
+    background: #1AC073;
+    color: white;
+} */
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    z-index: 10;
+    width: 1336px;
+    max-width: 70%;
+}
+
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);   
+}
+
+.modal-header .title{
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.modal-header{
+    align-items: center;
+}
+
+.modal-body{
+    padding: 55px 60px;
+    /* background: #E5E5E5; */
+}
+
+#overlay{
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+
+.submit-{
+    border: 2px solid #1AC073;
+    /* background: #1AC073;
+    color: white; */
+    color: #1AC073;
+    border-radius: 10px;
+    padding: 15px 65px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.submit-:hover{
+    background: #1AC073;
+    color: white;
+}
+
+.cancel{
+    border: 2px solid #1AC073;
+    /* background: #1AC073;
+    color: white; */
+    color: #1AC073;
+    border-radius: 10px;
+    padding: 15px 65px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.cancel:hover{
+    background: #1AC073;
+    color: white;
+}
+
+.ranges-and-preparation{
+    display: flex;
+}
+
+.ranges{
+    display: flex;
+}
+
+
+.modal-header h1{
+    text-align: center;
+}
 
 
 /* video section  */
@@ -436,7 +561,7 @@ header .hero-image{
 
 .player-controls{
     position: absolute;
-    top: 160px;
+    top: 170px;
     left: 680px;
     z-index: 1;
 }
@@ -467,12 +592,14 @@ p{
     margin-right: 40px;
     border-radius: 10px;
     border: 2px solid #929292;
+    border: none;
 }
 
 .email-{
     padding: 22px;
     border-radius: 10px;
     border: 2px solid #929292;
+    border: none;
 }
 
 .message{
@@ -482,6 +609,7 @@ p{
     border-radius: 10px;
     margin-bottom: 40px;
     border: 2px solid #929292;
+    border: none;
 }
 
 .delivery{
@@ -491,8 +619,8 @@ p{
 .submit{
     border: 2px solid #1AC073;
     background: #1AC073;
-    border-radius: 10px;
     color: white;
+    border-radius: 10px;
     padding: 15px 65px;
     text-align: center;
     text-decoration: none;
@@ -501,6 +629,11 @@ p{
     margin: 4px 2px;
     cursor: pointer;
 }
+
+/* .submit:hover{
+    background: #1AC073;
+    color: white;
+} */
 
 .contact-us{
     display: flex;
