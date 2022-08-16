@@ -125,6 +125,7 @@ header a:hover{
 
 
 
+
 /*Search and Cart buttons*/
 .nav-btn-container{
     display: inline-block;
@@ -155,6 +156,46 @@ header a:hover{
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
 }
+
+
+/* cart modal  */
+.cart-btn-small{
+    background: none;
+    border: none;
+}
+
+
+
+.cart-modal-container{
+
+background: #F7F8FA;
+border-radius: 20px;
+    width: 1336px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%) ; */
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: none;
+    z-index: 10;
+    width: 1336px;
+    max-width: 70%;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.cart-modal-container.active{
+    transform: translate(-50%, -50%) scale(1);   
+}
+
+.cart-big-image{
+    padding-left: 400px;
+    padding-right: 570px;
+    padding-top: 170px;
+}
+
+
+
 
 /* Home kitchen */
 
