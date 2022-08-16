@@ -40,10 +40,10 @@ productContainers.forEach((item, i) => {
 
 // Play and pause button
 playBtn.addEventListener('click', (e) => {
-    if(video.paused){
+    if (video.paused) {
         video.play()
         e.target.textContent = 'otherimages/Arrow.png'
-    } else{
+    } else {
         video.pause()
         e.target.textContent = 'otherimages/Arrow.png'
     }
@@ -55,7 +55,7 @@ openModalBtn.forEach(button => {
         const modal = document.querySelector(button.dataset.modalTarget)
         console.log(button.dataset.modalTarget);
         openModal(modal)
-       
+
     })
 })
 // cart modal
@@ -75,13 +75,13 @@ overlay.addEventListener('click', () => {
     const modals = document.querySelectorAll('.modal.active')
     modals.forEach(modal => {
         closeModal(modal)
-    }) 
+    })
 })
 overlay.addEventListener('click', () => {
     const modals = document.querySelectorAll('.cart-modal-container.active')
     modals.forEach(modal => {
         closeModal(modal)
-    }) 
+    })
 })
 
 closeModalBtns.forEach(button => {
@@ -89,6 +89,14 @@ closeModalBtns.forEach(button => {
         const modal = button.closest('.modal')
         closeModal(modal)
     })
+})
+closeModalBtns.forEach(button => {
+    button.addEventListener('click', () => {
+        const modal = button.closest('.cart-modal-container')
+        closeModal(modal)
+
+    })
+
 })
 
 
@@ -99,11 +107,12 @@ function openModal(modal) {
     // (window).scroll(function() { return false; });
     // querySelectorAll(".body")(window).scroll(function(){return false;})
     var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
-    function noscroll(){
-        window.scrollTo(0,scrollTop);
+
+    function noscroll() {
+        window.scrollTo(0, scrollTop);
     }
     window.addEventListener("scroll", noscroll)
-    
+
 
 }
 
@@ -121,5 +130,3 @@ function closeModal(modal) {
     // })
     delete window.scrollTo;
 }
-
-
