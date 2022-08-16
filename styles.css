@@ -17,10 +17,7 @@ body{
     height: 80px;
 }
 
-.wrapper{
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 
 nav{
     display: flex;
@@ -68,6 +65,11 @@ nav .logo{
     height: calc(100vh - 72px);
     display: flex;
     align-items: center;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header{
@@ -120,10 +122,7 @@ header a:hover{
     transform: translateY(-8px);
 }
 
-header .hero-image{
-   margin-top: 20.2rem;
-   margin-bottom: 15rem;
-}
+
 
 
 /*Search and Cart buttons*/
