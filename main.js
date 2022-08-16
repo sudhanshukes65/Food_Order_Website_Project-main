@@ -19,6 +19,7 @@ const preBtn = document.querySelectorAll('.pre-btn');
 const videoPlayer = document.querySelector('.video-player');
 const video = videoPlayer.querySelector('.video');
 const playBtn = videoPlayer.querySelector('.play-button');
+
 const openModalBtn = document.querySelectorAll('[data-modal-target]');
 const closeModalBtns = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
@@ -52,12 +53,35 @@ playBtn.addEventListener('click', (e) => {
 openModalBtn.forEach(button => {
     button.addEventListener('click', () => {
         const modal = document.querySelector(button.dataset.modalTarget)
+        console.log(button.dataset.modalTarget);
         openModal(modal)
+        function noscroll(){
+            window.scrollTo(0,0);
+        }
+        window.addEventListener("scroll", noscroll)
     })
 })
+// cart modal
+// openModalBtn.forEach(button => {
+//     button.addEventListener('click', () => {
+//         const modal1 = document.querySelector(button.dataset.modalTarget)
+//         console.log(button.dataset.modalTarget)
+//         openModal(modal1)
+//         function noscroll(){
+//             window.scrollTo(0,0);
+//         }
+//         window.addEventListener("scroll", noscroll)
+//     })
+// })
 
 overlay.addEventListener('click', () => {
     const modals = document.querySelectorAll('.modal.active')
+    modals.forEach(modal => {
+        closeModal(modal)
+    }) 
+})
+overlay.addEventListener('click', () => {
+    const modals = document.querySelectorAll('.cart-modal-container.active')
     modals.forEach(modal => {
         closeModal(modal)
     }) 
@@ -76,7 +100,13 @@ function openModal(modal) {
     overlay.classList.add('active')
     // (window).scroll(function() { return false; });
     // querySelectorAll(".body")(window).scroll(function(){return false;})
+    
+
 }
+
+
+
+
 
 function closeModal(modal) {
     if (modal == null) return
