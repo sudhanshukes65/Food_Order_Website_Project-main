@@ -55,10 +55,7 @@ openModalBtn.forEach(button => {
         const modal = document.querySelector(button.dataset.modalTarget)
         console.log(button.dataset.modalTarget);
         openModal(modal)
-        function noscroll(){
-            window.scrollTo(0,0);
-        }
-        window.addEventListener("scroll", noscroll)
+       
     })
 })
 // cart modal
@@ -101,6 +98,11 @@ function openModal(modal) {
     overlay.classList.add('active')
     // (window).scroll(function() { return false; });
     // querySelectorAll(".body")(window).scroll(function(){return false;})
+    var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+    function noscroll(){
+        window.scrollTo(0,scrollTop);
+    }
+    window.addEventListener("scroll", noscroll)
     
 
 }
@@ -113,6 +115,11 @@ function closeModal(modal) {
     if (modal == null) return
     modal.classList.remove('active')
     overlay.classList.remove('active')
+    // window.addEventListener("scroll", ()=>{
+    //     var scrollTopp = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
+    //     window.scrollTo(0,scrollTopp);
+    // })
+    delete window.scrollTo;
 }
 
 
