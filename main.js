@@ -74,6 +74,8 @@ function openModal(modal) {
     if (modal == null) return
     modal.classList.add('active')
     overlay.classList.add('active')
+    // (window).scroll(function() { return false; });
+    // querySelectorAll(".body")(window).scroll(function(){return false;})
 }
 
 function closeModal(modal) {

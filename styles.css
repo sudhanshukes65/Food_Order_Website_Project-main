@@ -399,7 +399,11 @@ header .hero-image{
     text-align: right;
 }
 
+
 .request{
+    position: relative;
+    left: 550px;
+    top: -30px;
     align-items: center;
     border: 2px solid #1AC073;
     background: #1AC073;
@@ -522,6 +526,16 @@ header .hero-image{
 
 .modal-header h1{
     text-align: center;
+}
+
+.preparation-1::-webkit-input-placeholder { text-align:right; }
+
+.preparation-divs{
+    display: flex;
+}
+.preparation-1{
+    width: 200px;
+    height: 48px;
 }
 
 
