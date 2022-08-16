@@ -94,6 +94,7 @@ closeModalBtns.forEach(button => {
     })
 })
 
+
 function openModal(modal) {
     if (modal == null) return
     modal.classList.add('active')
