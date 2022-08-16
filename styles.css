@@ -511,6 +511,10 @@ header .hero-image{
     color: white;
 }
 
+.ranges-and-preparation{
+    display: flex;
+}
+
 .ranges{
     display: flex;
 }
