@@ -17,8 +17,8 @@ const productContainers = document.querySelectorAll('.product-container');
 const nxtBtn = document.querySelectorAll('.nxt-btn');
 const preBtn = document.querySelectorAll('.pre-btn');
 const videoPlayer = document.querySelector('.video-player');
-const video = videoPlayer.querySelector('.video');
-const playBtn = videoPlayer.querySelector('.play-button');
+const video = document.querySelector('.video');
+const playBtn = document.querySelector('.play-button');
 
 const openModalBtn = document.querySelectorAll('[data-modal-target]');
 const closeModalBtns = document.querySelectorAll('[data-close-button]');
@@ -71,6 +71,7 @@ openModalBtn.forEach(button => {
 //     })
 // })
 
+
 overlay.addEventListener('click', () => {
     const modals = document.querySelectorAll('.modal.active')
     modals.forEach(modal => {
@@ -109,16 +110,13 @@ function openModal(modal) {
     var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
 
     function noscroll() {
+        // var scrollTop = window.pageYOffset || (document.documentElement || document.body.parentNode || document.body).scrollTop;
         window.scrollTo(0, scrollTop);
     }
     window.addEventListener("scroll", noscroll)
 
 
 }
-
-
-
-
 
 function closeModal(modal) {
     if (modal == null) return

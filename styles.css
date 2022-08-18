@@ -501,6 +501,7 @@ header a:hover {
 }
 
 #overlay {
+    z-index: 2;
     position: fixed;
     opacity: 0;
     transition: 200ms ease-in-out;
