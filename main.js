@@ -13,9 +13,11 @@
 // });
 
 
-const productContainers = document.querySelectorAll('.product-container');
-const nxtBtn = document.querySelectorAll('.nxt-btn');
-const preBtn = document.querySelectorAll('.pre-btn');
+const productContainers = document.querySelector('.product-container');
+console.log(productContainers);
+const nxtBtn = document.querySelector('.nxt-btn');
+console.log(nxtBtn);
+const preBtn = document.querySelector('.pre-btn');
 const videoPlayer = document.querySelector('.video-player');
 const video = document.querySelector('.video');
 const playBtn = document.querySelector('.play-button');
@@ -25,18 +27,33 @@ const closeModalBtns = document.querySelectorAll('[data-close-button]');
 const overlay = document.getElementById('overlay');
 
 // Popular items section
-productContainers.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
+// productContainers.forEach(( ) => {
+//     let containerDimensions = item.getBoundingClientRect();
+//     console.log(containerDimensions);
+//     let containerWidth = containerDimensions.width;
+//     console.log(containerWidth);
 
-    nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
-    })
+//     nxtBtn.addEventListener('click', () => {
+//         item.scrollLeft += containerWidth;
+//     })
 
-    preBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
-    })
+//     preBtn.addEventListener('click', () => {
+//         item.scrollLeft -= containerWidth;
+//     })
+// })
+
+
+
+let conwi = productContainers.getBoundingClientRect().width;
+console.log(conwi);
+ 
+nxtBtn.addEventListener('click',()=>{
+    productContainers.scrollLeft += conwi;
 })
+preBtn.addEventListener('click',()=>{
+    productContainers.scrollLeft -= conwi;
+})
+
 
 // Play and pause button
 playBtn.addEventListener('click', (e) => {
