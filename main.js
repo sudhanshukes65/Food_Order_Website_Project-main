@@ -89,16 +89,19 @@ closeModalBtns.forEach(button => {
     button.addEventListener('click', () => {
         const modal = button.closest('.modal')
         closeModal(modal)
+        showData();
     })
 })
 closeModalBtns.forEach(button => {
     button.addEventListener('click', () => {
         const modal = button.closest('.cart-modal-container')
         closeModal(modal)
+        
 
     })
 
 })
+var nameInput;
 
 
 function openModal(modal) {
@@ -116,6 +119,39 @@ function openModal(modal) {
     window.addEventListener("scroll", noscroll)
 
 
+    // data collection
+    var nameInput = document.querySelector(".name-input").value;
+    var range1Input = document.querySelector(".range-1").value;
+    var range2Input = document.querySelector(".range-2").value;
+    // console.log(nameInput);
+    // console.log(range1Input);
+    // console.log(range2Input);
+
+
+
+    // if(nameInput&range1Input&range2Input){
+    //     alert(1);
+    //     let dataaa = {
+    //         nameInput : nameInput,
+    //         range1Input : range1Input,
+    //         range2Input : range2Input
+    //     }
+    // }
+    // console.log(dataa);
+    // return dataa;
+
+
+
+}
+// submitButton = document.getElementById('submit-button');
+// submitButton.addEventListener('click', (e) => {
+//     var htmlp = document.querySelector(".data-here").innerHTML;
+//     htmlp = "hello";
+
+// })
+
+function showData (){
+    document.querySelector(".data-here").innerHTML = "hello";
 }
 
 function closeModal(modal) {
